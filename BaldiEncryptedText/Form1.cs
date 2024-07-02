@@ -1,15 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
 using System.Globalization;
-using System.Linq;
 using System.Media;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-using BaldiEncryptedText;
 
 namespace BaldiEncryptedText
 {
@@ -28,6 +20,8 @@ namespace BaldiEncryptedText
                 Decode_Output.Text = "";
                 return;
             }
+            // passPhase is always baldi.
+            // how did i know? i saw the source code.
             Decode_Output.Text = StringCipher.Decrypt(Decode_Text.Text, "baldi");
         }
 
@@ -45,6 +39,7 @@ namespace BaldiEncryptedText
                 Encode_Output.Text = "";
                 return;
             }
+            // passPhase is always baldi.
             Encode_Output.Text = StringCipher.Encrypt(Encode_Text.Text, "baldi");
         }
 

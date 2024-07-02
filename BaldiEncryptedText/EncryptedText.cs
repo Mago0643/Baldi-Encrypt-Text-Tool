@@ -8,6 +8,9 @@ using System.Linq;
  * Stolen From
  * 
  * https://stackoverflow.com/questions/10168240/encrypting-decrypting-a-string-in-c-sharp
+ * 
+ * And I don't know this is same algorithm with baldi.
+ * So Maybe It's not correct.
  */
 namespace BaldiEncryptedText
 {
